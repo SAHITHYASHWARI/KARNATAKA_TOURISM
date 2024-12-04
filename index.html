@@ -11,7 +11,29 @@
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="img/karnataka.jpg">
-   <script>(function(w, d) { w.CollectId = "674a00de8272c8d2e7e3572b"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+<script>
+    // Simulated login credentials
+    const validUsername = "user";
+    const validPassword = "password";
+
+    // Function to handle login
+    function handleLogin(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Get values from input fields
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Validate credentials
+        if (username === validUsername && password === validPassword) {
+            alert("Login successful!");
+            // Redirect to the main website
+            window.location.href = "index.html";
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    }
+</script>
 
     <title>KARNATAKA</title>
 </head>
