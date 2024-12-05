@@ -1,3 +1,100 @@
+/* Flipkart Enhanced Styles */
+.image-collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.collage-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Section */
+.testimonial, .testimonial1 {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: white;
+    font-size: 1rem;
+    transform: skew(0);
+}
+
+.testimonial:hover, .testimonial1:hover {
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
+.testimonial-img, .testimonial1-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    font-family: 'sans-serif';
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-navigation {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #be29ec;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .testimonial, .testimonial1 {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .card {
+        margin: 1rem auto;
+    }
+}
+
 .image-collage {
     display: flex;
     justify-content: center;
